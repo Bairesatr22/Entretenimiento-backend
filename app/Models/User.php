@@ -42,4 +42,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+	
+	public function admintle_image()
+	{
+		//return '' para la imagen queveng bas de datos
+	}
+	
+	public function admintle_desc(){
+	  return 'Administrador';
+	}
+	
+	public function usermenu_profile_url()
+	{
+		return 'profile/username'
+	}
 }
+
